@@ -11,7 +11,11 @@ npm install
 npm run start:dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Create an account. On desktop, direct messages and people are in the sidebar. On mobile, use the **Chats**, **People**, and **Servers** tabs at the bottom. Open a direct message to send messages or tap **Call** for an audio-only WebRTC call. The browser asks for microphone permission. Voice works best over HTTPS; some networks require a TURN relay.
+Open [http://localhost:3000](http://localhost:3000). Create an account. On desktop, direct messages and people are in the sidebar. On mobile, use the **Chats**, **People**, and **Servers** tabs at the bottom. Open a direct message to send messages or tap **Call** for an audio-only WebRTC call. The browser asks for microphone permission.
+
+To show an operating-system/browser notification for incoming calls while Anon is open, tap **Enable call alerts** and allow notifications. The in-app incoming call prompt remains available if browser notifications are unavailable or denied. Notifications while the site is fully closed or suspended require Web Push support and are not provided by this basic in-app notification feature.
+
+Voice works best over HTTPS; some networks require a TURN relay.
 
 ## Features
 
@@ -20,6 +24,7 @@ Open [http://localhost:3000](http://localhost:3000). Create an account. On deskt
 - Private one-to-one direct messages
 - One-to-one, audio-only WebRTC voice calls
 - Mobile bottom navigation for chats, people, and servers, with a back-to-chat control
+- Optional browser notifications for incoming calls while the app is open
 - NestJS API, Socket.IO signaling, and local JSON persistence in `data/anon.json`
 
 ## Before public deployment
