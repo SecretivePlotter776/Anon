@@ -11,16 +11,16 @@ npm install
 npm run start:dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Create an account, choose a user under **Available** to start a direct message, then use **Call** for an audio-only WebRTC call. The browser asks for microphone permission. Voice works best on HTTPS (or localhost); some NATs and firewalls may require a TURN relay.
+Open [http://localhost:3000](http://localhost:3000). Create an account. On desktop, direct messages and people are in the sidebar. On mobile, use the **Chats**, **People**, and **Servers** tabs at the bottom. Open a direct message to send messages or tap **Call** for an audio-only WebRTC call. The browser asks for microphone permission. Voice works best over HTTPS; some networks require a TURN relay.
 
 ## Features
 
 - Username/password registration and sign-in; passwords are bcrypt-hashed
-- Server text channels and real-time chat
-- Private one-to-one message threads, persisted with recent messages
-- Direct one-to-one voice calls using WebRTC; no video
-- NestJS API and Socket.IO signaling
-- Local JSON persistence in `data/anon.json`
+- Server channels and real-time chat
+- Private one-to-one direct messages
+- One-to-one, audio-only WebRTC voice calls
+- Mobile bottom navigation for chats, people, and servers, with a back-to-chat control
+- NestJS API, Socket.IO signaling, and local JSON persistence in `data/anon.json`
 
 ## Before public deployment
 
